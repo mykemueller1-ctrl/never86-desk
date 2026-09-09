@@ -1,0 +1,6 @@
+{
+  "name": "never86-desk",
+  "main": "workers/desk.ts",
+  "compatibility_date": "2026-09-09",
+  "observability": { "enabled": true }
+}
