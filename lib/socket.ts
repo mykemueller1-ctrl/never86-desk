@@ -35,7 +35,7 @@ export function groundedReply(house: House, text: string, pain: Pain): string {
       openLine(pain),
       "",
       win
-        ? `“Here’s one move from the book we already have — ${win.title}. ${win.dollars}.`
+        ? `“Here’s one move from the book we already have — ${win.title}. ${win.dollars}.`.replace("“", "Here’s one move from the book we already have — ").replace("Here’s one move from the book we already have — Here’s one move from the book we already have — ", "Here’s one move from the book we already have — ")
         : "Drop last night’s close and I’ll label the first leak.",
       win ? win.move : "",
       win ? `Receipt: ${win.receipt}` : "",
