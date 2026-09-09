@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #efe4cc;
+  --ink: #1b1610;
+  --mute: #5c5348;
+  --stamp: #b42318;
+  --folder: #c9a36a;
+  --rule: #d4c6a8;
+  --card: #f7f0de;
+  --good: #2f6b3a;
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans), "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+a {
+  color: inherit;
+}
+
+.ticket {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  box-shadow: 4px 4px 0 #1b161014;
+}
+
+.stamp {
+  color: var(--stamp);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
