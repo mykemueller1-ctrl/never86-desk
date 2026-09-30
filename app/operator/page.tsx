@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { SocketPane } from "@/components/SocketPane";
 import { WinClock } from "@/components/WinClock";
+import { ProjectIntake } from "@/components/ProjectIntake";
 import { money, pct } from "@/lib/houses";
 import { loadDesk } from "@/lib/session";
 import { groundedReply } from "@/lib/socket";
@@ -120,6 +121,8 @@ export default async function OperatorPage({
           Paper house. Wins are invoice + labor-card drift until a POS email lands.
         </section>
       )}
+
+      <ProjectIntake houseId={house.id} evidence={house.evidence} />
 
       <section className="mt-6 grid gap-4 md:grid-cols-2">
         <article className="ticket p-4">
